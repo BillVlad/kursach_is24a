@@ -1,0 +1,90 @@
+.sidebar {
+    background-color: #1c1f23;
+    color: #ddd;
+    padding: 1em;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.col1 {
+
+}
+
+.sidebar .widget {
+    /* margin-bottom: 2em; */
+}
+
+.sidebar .widget h3 {
+    background-color: #1c1f23; /* тёмный основной фон */
+    background-image: repeating-linear-gradient(
+        135deg,             /* угол диагонали */
+        rgba(255, 255, 255, 0.168), 
+        rgba(255, 255, 255, 0.168) 1px,
+        transparent 1px,
+        transparent 5px
+    );
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: .5em;
+}
+
+.sidebar ul li {
+    list-style-image: url("/media/icon/bullet.png");
+    margin-bottom: 0.5em;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.sidebar .widget-button img {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+}
+
+.sidebar .tags a {
+    display: inline-block;
+    background-color: #2a2d31;
+    color: #bbb;
+    padding: 3px 8px;
+    margin: 2px;
+    font-size: 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .tags a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.widget-button {
+    background-color: #272a31;
+    padding: .8em;
+    font-size: 18px;
+    border: #666666 solid 1px;
+}
+
+.widget-button a {
+    text-decoration: none;
+    color: #919191;
+}
+
+.widget .username {
+    font-weight: bold;
+}

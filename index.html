@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/adaptive.css">
 </head>
 
 <body>
@@ -14,19 +16,19 @@
         <header>
             <nav class="main-nav">
                 <div class="nav-links">
-                    <a href="#">ГЛАВНАЯ</a>
+                    <a href="#" class="active-page-1">ГЛАВНАЯ</a>
                     <a href="#">О САЙТЕ</a>
                 </div>
-        
+
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
                     <button type="submit">
-                        <img src="/media/search.gif" alt="search">
+                        <img src="/media/icon/search.gif" alt="search">
                     </button>
                 </div>
             </nav>
         </header>
-        
+
         <div class="under-header">
             <div class="logo">
                 <img src="media/logo.png" alt="LOGO">
@@ -35,7 +37,7 @@
 
         <div class="main-block">
             <div class="line-navigation">
-                <a href="#">ГЛАВНАЯ</a>
+                <a href="#" class="active-page-2">ГЛАВНАЯ</a>
                 <!-- <a href="#">BROWSERS</a>
                 <a href="#">COMPUTERS</a>
                 <a href="#">FEATURED</a>
@@ -49,53 +51,76 @@
                 <div class="news">
                     <div class="post">
                         <div class="post-image">
-                            <img src="path/to/image.jpg" alt="Post Image">
+                            <img src="/media/news-poster.jpg" alt="Post Image">
                         </div>
                         <h2 class="post-title">Sample post with, links, paragraphs and comments</h2>
                         <div class="post-meta">
-                            <span class="date">December 1st, 2009</span> |
-                            <span class="author">👤 admin</span> |
-                            <span class="comments">💬 12</span>
+                            <span class="date"><img src="/media/icon/date.png" alt="date"> December 1st, 2009</span>
+                            <span class="author"><img src="/media/icon/user.png" alt="date"> admin</span>
+                            <span class="edit">
+                                <img src="/media/icon/edit.png" alt="date">
+                                <a href="#">
+                                    Редактировать
+                                </a>
+                            </span>
                         </div>
                         <div class="post-body">
-                            <div class="post-thumbnail">
-                                <img src="path/to/image.jpg" alt="Thumbnail">
-                            </div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <a href="#">link</a> ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation <a href="#">link</a> ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat...
                             </p>
                         </div>
                     </div>
+
+                    <hr class="news-wrap">
+
+
                 </div>
                 <div class="sidebar">
-                    <div class="sidebar">
-                        <!-- Рекламные баннеры -->
-                        <div class="multiple-ad">
-                            <img src="/media/ad/ad1.jpg" alt="Ad 1">
-                            <img src="/media/ad/ad2.jpg" alt="Ad 2">
-                            <img src="/media/ad/ad3.jpg" alt="Ad 3">
-                        </div>
-                    
+                    <div class="col1">
                         <!-- Последние посты -->
                         <div class="widget recent-posts">
-                            <h3>RECENT POSTS</h3>
+                            <h3>НЕДАВНИЕ ЗАПИСИ</h3>
                             <ul>
-                                <li><a href="#">Sample post with links, paragraphs and comments</a></li>
-                                <li><a href="#">This is just going to be another test post</a></li>
-                                <li><a href="#">Keeping The Title Length Equal</a></li>
-                                <li><a href="#">Another One to Test</a></li>
-                                <li><a href="#">How to split a featured image into two (like this)</a></li>
+                                <li><a href="#">Привет, мир!</a></li>
                             </ul>
                         </div>
-                    
-                        <!-- Подписка и соцсети -->
-                        <div class="widget social">
-                            <h3>RSS SUBSCRIPTION</h3>
-                            <img src="path/to/rss-icon.png" alt="RSS">
-                            <h3>FOLLOW ME</h3>
-                            <img src="path/to/twitter-icon.png" alt="Twitter">
+                        <!-- Теги -->
+                        <div class="widget tags">
+                            <h3>TAGS</h3>
+                            <p>
+                                <!-- <a href="#">Design</a>
+                                <a href="#">CSS</a>
+                                <a href="#">Graphics</a>
+                                <a href="#">WordPress</a>
+                                <a href="#">Layout</a>
+                                <a href="#">Themes</a> -->
+                            </p>
                         </div>
-                    
+                        <div class="widget">
+                            <h3>НЕДАВНИЕ КОММЕНТАРИИ</h3>
+                            <ul>
+                                <li>
+                                    <span class="username">Мистер WordPress:</span> <br>
+                                    Привет! Это комментарий. Чтобы удалить его, автори..."
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col2">
+                        <!-- Подписка и соцсети -->
+                        <div class="widget-button">
+                            <a href="#">
+                                <img src="/media/icon/rss.png" alt="RSS">
+                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
+                            </a>
+                        </div>
+
+
+
                         <!-- Архивы -->
                         <div class="widget archives">
                             <h3>ARCHIVES</h3>
@@ -105,20 +130,6 @@
                                 <li><a href="#">June 2009</a></li>
                             </ul>
                         </div>
-                    
-                        <!-- Теги -->
-                        <div class="widget tags">
-                            <h3>TAGS</h3>
-                            <p>
-                                <a href="#">Design</a>
-                                <a href="#">CSS</a>
-                                <a href="#">Graphics</a>
-                                <a href="#">WordPress</a>
-                                <a href="#">Layout</a>
-                                <a href="#">Themes</a>
-                            </p>
-                        </div>
-                    
                         <!-- Блогролл -->
                         <div class="widget blogroll">
                             <h3>BLOGROLL</h3>
@@ -133,8 +144,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <footer>
