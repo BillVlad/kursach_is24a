@@ -38,7 +38,7 @@ header {
     color: #525252;
     text-decoration: none;
     padding: 0.5em;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .nav-links a:hover {
@@ -48,34 +48,33 @@ header {
 }
 
 .search-bar {
+    background-color: #272a31;
+    border: #666666 solid 1px;
     display: flex;
+    overflow: hidden;
     align-items: center;
-    background-color: #1e1e1e;
-    border-radius: 4px;
     padding: 0 0.5em;
 }
 
 .search-bar input {
+    flex: 1;
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: #fff;
     padding: 0.5em;
+    width: auto;
 }
 
 .search-bar button {
     background: none;
     border: none;
-    color: white;
+    color: #fff;
     cursor: pointer;
-    font-size: 1em;
 }
 
-.under-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
+.wrap-search-bar {
+    width: 200pt;
 }
 
 .logo {
@@ -83,9 +82,9 @@ header {
 }
 
 .line-navigation {
-    background-image: url("/media/nav-background.png");
+    /* background-image: url("/media/nav-background.png"); */
+    background-color: #a42405;
     background-size: cover;
-    height: 30pt;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -95,7 +94,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 30pt;
     padding: 0 1em;
     margin: auto 1em;
     color: white;
@@ -145,4 +144,28 @@ header {
 .news-wrap {
     border-color: transparent;
     background-image: url("/media/contentwrap-background.png");
+}
+
+footer {
+    background-image: url("/media/footer-background.png");
+    background-size: contain;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.text-footer {
+    display: flex;
+    color: #fff;
+    padding: auto 100%;
+    height: 50pt;
+    text-align: center;
+    justify-content: center;
+    a {
+        color: #fff;
+    }
+}
+
+.post-title a {
+    color: #000;
+    text-decoration: none;
 }
