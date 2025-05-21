@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="кинопоиск, кино, сериалы, проект, аниме, доннту, новости, статьи">
     <title>Главная страница</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/titles.css">
 </head>
 
 <body>
@@ -37,37 +39,75 @@
 
         <div class="main-block">
             <div class="line-navigation">
-                <a href="/" class="active-page-2">ГЛАВНАЯ</a>
-                <a href="/pages/serials.html" >СЕРИАЛЫ</a>
+                <a href="/">ГЛАВНАЯ</a>
+                <a href="/pages/serials.html">СЕРИАЛЫ</a>
                 <a href="/pages/movies.html">КИНО</a>
-                <a href="/pages/titles.html">ТАЙТЛЫ</a>
+                <a href="/pages/titles.html" class="active-page-2">ТАЙТЛЫ</a>
             </div>
             <div class="content">
-                <div class="news">
-                    <div class="post">
-                        <div class="post-image">
-                            <img src="/media/articles/poster_art2.webp" alt="Post Image">
+                <div class="list-titles">
+                    <a href="/pages/titles/Kusuriya_no_Hitorigoto.html" class="link-title">
+                        <div class="titles">
+                            <div class="poster-title">
+                                <img src="/media/poster/Kusuriya_no_Hitorigoto.webp" alt="Poster">
+                            </div>
+                            <div class="name-title">
+                                Монолог фармацевта
+                            </div>
+                            <div class="meta-title">
+                                <div class="date">2023</div>
+                                <span class="genre"><b>Жанр:</b> аниме, мультфильм, драма, детектив</span>
+                            </div>
                         </div>
-                        <h2 class="post-title"><a href="/pages/article/art2.html">«Громовержцы*»: последний шанс суперзлодеев второго эшелона</a></h2>
-                        <div class="post-meta">
-                            <span class="date"><img src="/media/icon/date.png" alt="date"> 1 мая 2025</span>
-                            <span class="author"><img src="/media/icon/user.png" alt="date"> admin</span>
-                            <span class="edit">
-                                <img src="/media/icon/edit.png" alt="date">
-                                <a href="#">Редактировать</a>
-                            </span>
+                    </a>
+                    <a href="/pages/titles/Thunderbolts.html" class="link-title">
+                        <div class="titles">
+                            <div class="poster-title">
+                                <img src="/media/poster/Thunderbolts.webp" alt="Poster">
+                            </div>
+                            <div class="name-title">
+                                Громовержцы*
+                            </div>
+                            <div class="meta-title">
+                                <div class="date">2025</div>
+                                <span class="genre"><b>Жанр:</b> фантастика, боевик</span>
+                            </div>
                         </div>
-                        <div class="post-body">
-                            <p>
-                                В мировой прокат вышел последний фильм пятой фазы MCU, задуманный как ответ «Отряду самоубийц»: сведенные случаем антигерои начинают работать вместе. Но персонажи оказались белыми и пушистыми, а сам фильм наступает на все традиционные марвеловские грабли.
-                            </p>
-                        </div>
-                        <hr class="news-wrap">
-                    </div>
+                    </a>
 
+                     <a href="/pages/titles/Squad_games.html" class="link-title">
+                        <div class="titles">
+                            <div class="poster-title">
+                                <img src="/media/poster/Squad_games.webp" alt="Poster">
+                            </div>
+                            <div class="name-title">
+                                Игра в кальмара
+                            </div>
+                            <div class="meta-title">
+                                <div class="date">2021</div>
+                                <span class="genre"><b>Жанр:</b> триллер, драма</span>
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
                 <div class="sidebar">
                     <div class="col1">
+                         <div class="widget-button">
+                            <a href="#">
+                                <img src="/media/icon/rss.png" alt="RSS">
+                                <span>
+                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="search-bar search-bar-sidebar">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit" class="button-search-sidebar">
+                                <img src="/media/icon/search.gif" alt="search">
+                            </button>
+                        </div>
                         <!-- Последние посты -->
                         <div class="widget recent-posts">
                             <h3>НЕДАВНИЕ ЗАПИСИ</h3>
@@ -93,24 +133,6 @@
                                     Привет! Это комментарий. Чтобы удалить его, автори..."
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <div class="col2">
-                        <div class="widget-button">
-                            <a href="#">
-                                <img src="/media/icon/rss.png" alt="RSS">
-                                <span>
-                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="search-bar search-bar-sidebar">
-                            <input type="text" placeholder="Поиск">
-                            <button type="submit" class="button-search-sidebar">
-                                <img src="/media/icon/search.gif" alt="search">
-                            </button>
                         </div>
 
                         <div class="widget archives">

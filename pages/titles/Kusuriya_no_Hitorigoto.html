@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="кинопоиск, кино, сериалы, проект, аниме, доннту, новости, статьи">
     <title>Главная страница</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/titles.css">
 </head>
 
 <body>
@@ -37,37 +39,59 @@
 
         <div class="main-block">
             <div class="line-navigation">
-                <a href="/" class="active-page-2">ГЛАВНАЯ</a>
-                <a href="/pages/serials.html" >СЕРИАЛЫ</a>
+                <a href="/">ГЛАВНАЯ</a>
+                <a href="/pages/serials.html">СЕРИАЛЫ</a>
                 <a href="/pages/movies.html">КИНО</a>
-                <a href="/pages/titles.html">ТАЙТЛЫ</a>
+                <a href="/pages/titles.html" class="active-page-2">ТАЙТЛЫ</a>
             </div>
             <div class="content">
-                <div class="news">
-                    <div class="post">
-                        <div class="post-image">
-                            <img src="/media/articles/poster_art2.webp" alt="Post Image">
+                <div class="title">
+                    <div class="show-container">
+                        <div class="left-column">
+                            <img src="/media/poster/Kusuriya_no_Hitorigoto.webp" alt="Постер" class="poster">
                         </div>
-                        <h2 class="post-title"><a href="/pages/article/art2.html">«Громовержцы*»: последний шанс суперзлодеев второго эшелона</a></h2>
-                        <div class="post-meta">
-                            <span class="date"><img src="/media/icon/date.png" alt="date"> 1 мая 2025</span>
-                            <span class="author"><img src="/media/icon/user.png" alt="date"> admin</span>
-                            <span class="edit">
-                                <img src="/media/icon/edit.png" alt="date">
-                                <a href="#">Редактировать</a>
-                            </span>
+
+                        <div class="right-column">
+                            <h1 class="title">Монолог фармацевта <span>(сериал 2023 – ...)</span></h1>
+                            <div class="subtitle">Kusuriya no Hitorigoto</div>
+                            <hr>
+                            <p>О сериале</p>
+                            <div class="info-grid">
+                                <div>Год производства</div><div>2023 (2 сезона)</div>
+                                <div>Страна</div><div>Япония</div>
+                                <div>Жанр</div><div>аниме, мультфильм, драма, детектив</div>
+                                <div>Слоган</div><div>—</div>
+                                <div>Режиссер</div><div>Норихиро Наганума, Акинори Фудзака, Ватару Накагава, ...</div>
+                                <div>Сценарий</div><div>Норихиро Наганума, Мисудзу Тиба, Юко Какихара, ...</div>
+                                <div>Продюсер</div><div>Томоко Фудзимура, Юито Хирахара, Мицутэру Хисияма, ...</div>
+                                <div>Оператор</div><div>Руми Исигуро</div>
+                                <div>Композитор</div><div>Сатору Косаки, Ариса Охдзадзама, Кевин Пенкин</div>
+                                <div>Художник</div><div>Кацуми Такао</div>
+                                <div>Монтаж</div><div>Даисуки Имаи</div>
+                                <div>Премьера в мире</div><div>21 октября 2023, ...</div>
+                                <div>Время серии</div><div>24 мин</div>
+                            </div>
                         </div>
-                        <div class="post-body">
-                            <p>
-                                В мировой прокат вышел последний фильм пятой фазы MCU, задуманный как ответ «Отряду самоубийц»: сведенные случаем антигерои начинают работать вместе. Но персонажи оказались белыми и пушистыми, а сам фильм наступает на все традиционные марвеловские грабли.
-                            </p>
-                        </div>
-                        <hr class="news-wrap">
                     </div>
 
                 </div>
                 <div class="sidebar">
                     <div class="col1">
+                         <div class="widget-button">
+                            <a href="#">
+                                <img src="/media/icon/rss.png" alt="RSS">
+                                <span>
+                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="search-bar search-bar-sidebar">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit" class="button-search-sidebar">
+                                <img src="/media/icon/search.gif" alt="search">
+                            </button>
+                        </div>
                         <!-- Последние посты -->
                         <div class="widget recent-posts">
                             <h3>НЕДАВНИЕ ЗАПИСИ</h3>
@@ -93,24 +117,6 @@
                                     Привет! Это комментарий. Чтобы удалить его, автори..."
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <div class="col2">
-                        <div class="widget-button">
-                            <a href="#">
-                                <img src="/media/icon/rss.png" alt="RSS">
-                                <span>
-                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="search-bar search-bar-sidebar">
-                            <input type="text" placeholder="Поиск">
-                            <button type="submit" class="button-search-sidebar">
-                                <img src="/media/icon/search.gif" alt="search">
-                            </button>
                         </div>
 
                         <div class="widget archives">

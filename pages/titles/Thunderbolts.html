@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="кинопоиск, кино, сериалы, проект, аниме, доннту, новости, статьи">
     <title>Главная страница</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/css/adaptive.css">
+    <link rel="stylesheet" href="/css/titles.css">
 </head>
 
 <body>
@@ -37,37 +39,64 @@
 
         <div class="main-block">
             <div class="line-navigation">
-                <a href="/" class="active-page-2">ГЛАВНАЯ</a>
-                <a href="/pages/serials.html" >СЕРИАЛЫ</a>
+                <a href="/">ГЛАВНАЯ</a>
+                <a href="/pages/serials.html">СЕРИАЛЫ</a>
                 <a href="/pages/movies.html">КИНО</a>
-                <a href="/pages/titles.html">ТАЙТЛЫ</a>
+                <a href="/pages/titles.html" class="active-page-2">ТАЙТЛЫ</a>
             </div>
             <div class="content">
-                <div class="news">
-                    <div class="post">
-                        <div class="post-image">
-                            <img src="/media/articles/poster_art2.webp" alt="Post Image">
+                <div class="title">
+                    <div class="show-container">
+                        <div class="left-column">
+                            <img src="/media/poster/Thunderbolts.webp" alt="Постер" class="poster">
                         </div>
-                        <h2 class="post-title"><a href="/pages/article/art2.html">«Громовержцы*»: последний шанс суперзлодеев второго эшелона</a></h2>
-                        <div class="post-meta">
-                            <span class="date"><img src="/media/icon/date.png" alt="date"> 1 мая 2025</span>
-                            <span class="author"><img src="/media/icon/user.png" alt="date"> admin</span>
-                            <span class="edit">
-                                <img src="/media/icon/edit.png" alt="date">
-                                <a href="#">Редактировать</a>
-                            </span>
+
+                        <div class="right-column">
+                            <h1 class="title">Громовержцы* <span>(2025)</span></h1>
+                            <div class="subtitle">Thunderbolts* 16+</div>
+                            <hr>
+                            <p>О фильме</p>
+                            <div class="info-grid">
+                                <div>Год производства</div><div>2025</div>
+                                <div>Страна</div><div>США, Австралия, Канада</div>
+                                <div>Жанр</div><div>фантастика, боевик</div>
+                                <div>Слоган</div><div>«Не супер. И не герои. Но и не сдаются»</div>
+                                <div>Режиссер</div><div>Джейк Шрейер</div>
+                                <div>Сценарий</div><div>Джоанна Кало, Курт Бусиек, Марк Багли, ...</div>
+                                <div>Продюсер</div><div>Кевин Файги, Брайан Чапек, Луис Д’Эспозито, ...</div>
+                                <div>Оператор</div><div>Эндрю Дроз Палермо</div>
+                                <div>Композитор</div><div>Сон Люкс</div>
+                                <div>Художник</div><div>Грэйс Юн, Рори Брунс, Энди Крамбли, ...</div>
+                                <div>Монтаж</div><div>Анджела М. Катандзаро, Гарри Юн</div>
+                                <div>Бюджет</div><div>$180 000 000</div>
+                                <div>Сборы в США</div><div>$155 538 417</div>
+                                <div>Сборы в мире</div><div>+ $170 714 216 = $326 252 633</div>
+                                <div>Премьера в мире</div><div>22 апреля 2025, ...</div>
+                                <div>Возраст</div><div>16+</div>
+                                <div>Рейтинг MPAA</div><div>PG-13</div>
+                                <div>Время</div><div>2 ч 7 мин</div>
+                            </div>
                         </div>
-                        <div class="post-body">
-                            <p>
-                                В мировой прокат вышел последний фильм пятой фазы MCU, задуманный как ответ «Отряду самоубийц»: сведенные случаем антигерои начинают работать вместе. Но персонажи оказались белыми и пушистыми, а сам фильм наступает на все традиционные марвеловские грабли.
-                            </p>
-                        </div>
-                        <hr class="news-wrap">
                     </div>
 
                 </div>
                 <div class="sidebar">
                     <div class="col1">
+                         <div class="widget-button">
+                            <a href="#">
+                                <img src="/media/icon/rss.png" alt="RSS">
+                                <span>
+                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="search-bar search-bar-sidebar">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit" class="button-search-sidebar">
+                                <img src="/media/icon/search.gif" alt="search">
+                            </button>
+                        </div>
                         <!-- Последние посты -->
                         <div class="widget recent-posts">
                             <h3>НЕДАВНИЕ ЗАПИСИ</h3>
@@ -93,24 +122,6 @@
                                     Привет! Это комментарий. Чтобы удалить его, автори..."
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <div class="col2">
-                        <div class="widget-button">
-                            <a href="#">
-                                <img src="/media/icon/rss.png" alt="RSS">
-                                <span>
-                                ПОДПИШИТЕСЬ НА НАШУ RSS ЛЕНТУ!
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="search-bar search-bar-sidebar">
-                            <input type="text" placeholder="Поиск">
-                            <button type="submit" class="button-search-sidebar">
-                                <img src="/media/icon/search.gif" alt="search">
-                            </button>
                         </div>
 
                         <div class="widget archives">
