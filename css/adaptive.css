@@ -1,6 +1,6 @@
 @media screen and (min-width: 1280px) and (orientation: landscape) {
     .main-container {
-        margin: auto 20em;
+        margin: auto 15em;
     }
 
     .sidebar {
@@ -12,6 +12,9 @@
 @media screen and (min-width: 980px) and (max-width: 1280px) {
     .main-container {
         margin: auto 5em;
+    }
+    .content {
+        grid-template-columns: 100%;
     }
 }
 
@@ -45,5 +48,9 @@
 
     .content {
         grid-template-columns: 100%;
+    }
+
+    .post-image img {
+        height: 100%;
     }
 }
