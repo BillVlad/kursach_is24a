@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("/media/background.png");
-    font-family: Arial, Helvetica, sans-serif;
 }
+
+* {     font-family: Arial, Helvetica, sans-serif; }
 
 a {
     color: #aa5e44;
@@ -82,7 +83,6 @@ header {
 }
 
 .line-navigation {
-    /* background-image: url("/media/nav-background.png"); */
     background-color: #a42405;
     background-size: cover;
     display: flex;
@@ -143,6 +143,8 @@ header {
 }
 
 .news {
+    display: flex;
+    flex-direction: column;
     margin: 1.2em;
 }
 
