@@ -23,7 +23,7 @@
     .search-bar { margin: auto .2em; }
     .line-navigation { flex-direction: column; }
     .line-navigation a {
-        width: 100%;
+        width: 93%;
         height: 25pt;
     }
     .main-nav {

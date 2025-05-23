@@ -116,9 +116,8 @@
     }
 
     .left-column img {
-        height: 300pt;
-        width: 100%;
-        margin: 0;
+        width: 50%;
+        /* margin: .5em; */
     }
 
 }
